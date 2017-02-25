@@ -17,9 +17,9 @@ class LocaleSetup
     {
         $phplocale = config('app.phplocale');
 
-    	  // if(Session::has('lang')) {
-    		//     App::setLocale(Session::get('lang'));
-    		//     $phplocale = Session::get('locale');
+    	  // if(session()->has('lang')) {
+    		//     app()->setLocale(session()->get('lang'));
+    		//     $phplocale = session()->get('locale');
     	  // }
 
     	  setlocale(LC_TIME, $phplocale);
