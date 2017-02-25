@@ -12,5 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  $dia = date('d');
+  $ano = date('Y');
+  $diaSemana = ucwords(Carbon\Carbon::instance(new DateTime)->formatLocalized('%A'));
+  $mes  = ucwords(Carbon\Carbon::instance(new DateTime)->formatLocalized('%B'));
+
+  return "{$diaSemana}, {$dia} de {$mes} de {$ano}";
 });

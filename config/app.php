@@ -79,6 +79,11 @@ return [
 
     'locale' => 'en',
 
+    /**
+     * PHP Locale
+     */
+    'phplocale' => ['pt_BR', 'pt_BR.UTF-8'],
+
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
